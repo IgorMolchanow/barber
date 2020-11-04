@@ -82,13 +82,34 @@
     <section>
         <h2> Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <!-- Здесь будет форма-->
-        <button type="button"> Закрыть</button>
+        <form class="User" method="POST"
+            action="http://echo.htmlacademy.ru">
+            <p>
+                <label for="user-login">Логин</label>
+                <input id="user-login" type="text" 
+                name="login" placeholder="example@email.om">
+            </p>
+            <p>
+                <label for="user-password">Пароль</label>
+                <input id="user-password" type="password" 
+                name="password" placeholder="*******">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="login-password-info">
+                <label for="login-password-info"> Запомните меня
+                <a href="#">Я забыл пароль =(</a>   
+            </p>
+            <button type="submit">Войти</button>
+        </form>    
+            <button type="button"> Закрыть</button>    
     </section>
     <section>
         <h2> Как до нас добраться</h2>
-        <p>Введите свой логин и пароль</p>
+        <p>
+            <img src="img/map.jpg" width="780"
+            height="560" alt="Адрес барбершопа">
+        </p>
            <button type="button"> Закрыть</button>
-    </section>    
+    </section>
 </body>
 </html>

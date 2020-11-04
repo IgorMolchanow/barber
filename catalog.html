@@ -16,7 +16,7 @@
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <button type="button">Войти</button>
+            <a href="login.html">Логин</a>
         </nav>
     </header>
     <main>
@@ -29,21 +29,56 @@
             </ul>
         </div>
         <section>
-            <h2>Производители:</h2>
+            <form class="filter" method="get"
+            action="https://echo.htmlacademy.ru"></form>
+            <fieldset>
+            <legend>Производители:</legend>
             <ul>
-                <li>Baxter of california</li>
-                <li>MR.Natty</li>
-                <li>Suavecito</li>
-                <li>Murray's</li>
-                <li>American crew</li>
+                <li>
+                  <input type="checkbox" name="Baxter of california"
+                   id="filter-baxter-of-california">
+                   <label for="filter-baxter-of-california"> Baxter of california</label>
+                   </li>
+                <li>
+                   <input type="checkbox" name="Mr.Natty"
+                   id=" filter-mr-natty">
+                   <label for="filter-mr-natty">MR.Natty</li>
+                <li>
+                    <input type="checkbox" name="Suavecito"
+                    id="filter-suavecito">
+                   <label for="filter-suavecito">Suavecito</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Malin+Goets"
+                     id="filter-malin+goetz">
+                     <label for="gilter-malin+goetz">Malin+Goez</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Murray's" id="filter-murrays">
+                    <label for="filter-murrays">Murray's</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="American crew" id="filter-american-crew">
+                    <label for="filter-american-crew"> American crew</label>
+                </li>
             </ul>
-            <h2>Группы товаров:</h2>
+            </fieldset>
+            <fieldset>
+            <legend>Группы товаров:</legend>
             <ul>
-                <li> Бритвенные принадлежности</li>
-                <li>Средства для ухода</li>
-                <li>Аксессуары</li>
+                <li><input type="radio" name="product-group" value="shaving" id="filter-shaving">
+                    <label for="filter-shaving"> Бритвенные принадлежности</label>
+                </li>
+                <li>
+                    <input type="radio" name="product-group" value="care" id="filter-care">
+                    <label for="filter-care"> Средства для ухода</label>
+                </li>
+                <li> <input type="radio" name="product-group" value="acessoires" id="filter-acessoires">
+                    <label for="filter-acessoires"> Аксессуары</label>
+                </li>
             </ul>
-            <button type="submit"> Показать </button>
+            </fieldset>
+        <button type="submit"> Показать </button>
         </section>
         <section>
             <h2>Каталог средств</h2>
@@ -148,13 +183,34 @@
     <section>
         <h2> Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
-        <!-- Здесь будет форма-->
-        <button type="button"> Закрыть</button>
-    </section>
-    <section>
-        <h2> Как до нас добраться</h2>
-        <p>Введите свой логин и пароль</p>
-           <button type="button"> Закрыть</button>
-    </section>      
+    <form class="User" method="POST"
+        action="http://echo.htmlacademy.ru">
+        <p>
+            <label for="user-login">Логин</label>
+            <input id="user-login" type="text" 
+            name="login" placeholder="example@email.om">
+        </p>
+        <p>
+            <label for="user-password">Пароль</label>
+            <input id="user-password" type="password" 
+            name="password" placeholder="*******">
+        </p>
+        <p>
+            <input type="checkbox" name="remember" id="login-password-info">
+            <label for="login-password-info"> Запомните меня
+            <a href="#">Я забыл пароль =(</a>   
+        </p>
+        <button type="submit">Войти</button>
+    </form>    
+        <button type="button"> Закрыть</button>    
+</section>
+<section>
+    <h2> Как до нас добраться</h2>
+    <p>
+        <img src="img/map.jpg" width="780"
+        height="560" alt="Адрес барбершопа">
+    </p>
+       <button type="button"> Закрыть</button>
+</section>
 </body>
 </html>
