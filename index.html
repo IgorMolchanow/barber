@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=1, initial-scale=1.0">
     <title>Барбершоп бородинский></title> 
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/normalize.css">
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="normalize.css">
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header">
@@ -44,8 +44,9 @@
         </li>
     </ul>
     </section>
+    <div class="index-columns">
     <section class="news">
-    <h2 class="news-article">Новости</h2>
+    <h2>Новости</h2>
     <ul class="news-list">
         <li class="news-item">
           <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
@@ -60,9 +61,8 @@
         </li>
     </ul>
    </section>
-    <div class="index-columns">
     <section class="gallery">
-       <h2> Фотогалерея</h2>
+       <h2>Фотогалерея</h2>
        <figure class="gallery-content">
            <a href="#">
                <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
@@ -71,6 +71,8 @@
        <button class="button gallery-button-gallery-back" type="button">Назад</button>
        <button class="button gallery-button-gallery-next" type="button">Вперед</button>
    </section>
+    </div>
+    <div class="index-columns">
    <section class="contacts">
        <h2>Контактная информация</h2>
        <p class="contacts-info">Барбершоп "Бородинский"<br>
@@ -84,25 +86,25 @@
             <a class="contacts-map" href="map.html">Как проехать</a>
             <a class="contacts-callback" href="cotacts.html">Обратная связь</a>
      </section>
-   <section>
+   <section class="appointment">
        <h2>Записаться</h2>
-       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+       <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
        <form action="https://echo/htmlacademy.ru" method="POST">
        <p>
-           <label for="appointment-date">Дата</label>
-           <input type="date" name="date" value="2020-10-08">
+           <label class="appointment-item" for="appointment-date">Дата</label>
+           <input class="appointment-date" type="date" name="date" value="2020-10-08">
         </p> 
         <p>
-            <label for="appointment-time">Время</label>
-            <input type="time" name="time" value="11:00">
+            <label class="appointment-item" for="appointment-time">Время</label>
+            <input class="appointment-time" type="time" name="time" value="11:00">
         </p>   
         <p>
-            <label for="appointment-text">Ваше имя</label>
-            <input type="text" name="name" value="" placeholder="Игорь">
+            <label class="appointment-item" for="appointment-text">Ваше имя</label>
+            <input class="appointment-name" type="text" name="name" value="" placeholder="Игорь">
         </p>
         <p>
-            <label for="appointment-tel">Телефон</label>
-            <input type="tel" name="phone" value="" placeholder="+79534225412">
+            <label class="appointment-item" for="appointment-tel">Телефон</label>
+            <input class="appointment-tel" type="tel" name="phone" value="" placeholder="+79534225412">
         </p>
         <button type="submit">Отправить</button>
     </form>
@@ -119,9 +121,9 @@
      <div class="footer-social">
          <p>Давайте дружить</p>
          <ul>
-            <li><a href="#">Вконтакте</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button"  href="#">Фейсбук</a></li>
+            <li><a class="social-button"  href="#">Инстаграм</a></li>
         </ul>
      </div>    
      <p class="footer-copyrights">
@@ -129,7 +131,7 @@
            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
      </p>
     </footer>
-<section class="modal-login">
+<section class="modal">
     <h2> Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
     <form class="login-form" method="POST"
@@ -145,15 +147,16 @@
             name="password" placeholder="*******">
         </p>
         <p class="login-password-info">
+            <label class="login-chekbox" for="login-password-info"> 
             <input type="checkbox" name="remember" id="login-password-info">
-            <label for="login-password-info"> Запомните меня
-            <a href="#">Я забыл пароль</a>   
+            <span class="chebox-indicator"></span> Запомните меня
+            <a class="restore" href="#">Я забыл пароль</a>   
         </p>
         <button type="submit">Войти</button>
     </form>    
         <button type="button"> Закрыть</button>    
 </section>
-<section>
+<section class="modal">
     <h2> Как до нас добраться</h2>
     <p>
         <img src="img/map.jpg" width="780"
