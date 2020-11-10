@@ -146,12 +146,14 @@ font-size: 30px;
 font-weight: bold;
 text-align: left
 }
-.breadcrumbs{
+.breadcrumbs:hover
+.breadcrumbs:focus{
   font-size: 14px;
   font-weight: bold;
   text-align: left;
   color: #000000;
-  list-style: none
+  list-style: none;
+  text-decoration: underline;
 }
 .catalog-columns {
 }
@@ -199,7 +201,6 @@ text-align: left
 }
 .catalog-products {
 }
-
 .catalog-list {
      list-style: none;
 }
@@ -216,8 +217,10 @@ text-align: left
     background-color: #ffffff;
 }
 .product-firm {
+    font-family: inherit;
     background-color: #ffffff
 }
 .catalog-price {
+  font-family: inherit;
   background-color:#e5e5e5;
 }
