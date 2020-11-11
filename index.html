@@ -13,8 +13,9 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <img class="main-header-logo" src="img/index-logo.svg" width="368" alt="Логотип барбершопа бородинский"
-                srcset="">
+            <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="368" alt="Логотип барбершопа бородинский" srcset="">
+            </a>
             <div class="main-navigation-wrapper">
                 <div class="container">
                     <ul class="site-navigation">
@@ -25,14 +26,16 @@
                         <li> <a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
+                <ul class="user-navigation">
+                    <a href="login.html">Вход</a>
             </div>
-            <a class="user-navigation" href="login.html">Вход</a>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Барбершоп "Бородинский"</h1>
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
         <section>
-            <h1>Преимущества</h1>
+            <h1 class="visually-hidden">Преимущества</h1>
             <ul class="features-list">
                 <li class="feature-item">
                     <h3>Быстро</h3>

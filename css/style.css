@@ -1,4 +1,4 @@
-/* Общие стили */
+                                           /* Общие стили */
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +28,26 @@ a {
 .button:active {
     background-color: #663d15;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	-webkit-clip-path: inset(100%);
+
+	clip-path: inset(100%);
+	clip:rect(0 0 0 0);
+	overflow: hidden;
+}
+                         /* Стилизация основного контента */
+                                 /*Стилизация шапки */
 .container {
     width: 940px;
     margin: 0 auto;
@@ -35,44 +55,58 @@ a {
 }
 .main-header{
     margin-bottom: 75px;
+/* Временно для сетки */
+    min-height: 285px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 285px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    border: none;
 }
 .main-header-logo{
     order: 2;
     width: 370px;
     height: 154px;
 }
-.main-navigation {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #000000;
-    border: none;
-}
 .main-navigation-wrapper{
-width: 100%;
-margin-bottom: 60;
-}
-.main-navigation-wrapper .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+width: 100%;
+margin-bottom: 60px;
+background-color: black;
+    /* Временно для сетки */
+    /* min-height: 70px; */
 }
 .site-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 620px;    
     margin: 0;
     padding: 0;
-    list-style: none 
+    list-style: none;
+    /* Временно для сетки */
+    /* min-height: 70px; */
 }
 .user-navigation {
-    width: 140;
+    width: 140px;
     margin: 0;
     padding: 0;
     list-style: none;
+    /* Временно для сетки */
+    /* min-height: 70px;  */
+}
+.main-navigation-wrapper .container{
+    display: flex;
 }
 .site-navigation a,
 .user-navigation a {
