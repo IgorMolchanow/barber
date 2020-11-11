@@ -35,6 +35,9 @@ a {
 }
 .main-header{
     margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main-header-logo{
     order: 2;
