@@ -64,6 +64,7 @@ a {
 .main-navigation {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     align-items: center;
     min-height: 285px;
     width: 100%;
@@ -81,6 +82,7 @@ a {
 .main-navigation-wrapper{
 display: flex;
 flex-direction: row;
+
 align-items: center;
 justify-content: space-between;
 width: 100%;
@@ -93,6 +95,7 @@ background-color: black;
 .site-navigation{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 620px;    
@@ -104,7 +107,8 @@ background-color: black;
     /* min-height: 70px; */
 }
 .user-navigation {
-    width: 140px;
+    display: flex;
+    max-width: 140px;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -234,7 +238,7 @@ text-decoration: underline;
 }
 .footer-social {
     text-align: center;
-    width: 145px;
+    width: 180px;
     /* Временно для сетки */
     min-height: 100px;
 }
