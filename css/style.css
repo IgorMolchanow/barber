@@ -195,7 +195,7 @@ color: #f7f4f1;
     transform: rotate(45deg);
 }
 .feature-item p {
-  margin: 0 10px;  
+    margin: 0 10px;  
 }
 .index-columns {
     color: #000000;
@@ -260,7 +260,7 @@ text-transform: none;
     margin: 0;
 }
 .gallery-content img{
-   width: 286px;
+    width: 286px;
     height: 164px;
 }
 .gallery-button{
@@ -324,10 +324,10 @@ width: 380px;
 border-color: #663d15;    
 }
 .appointment .button {
- display: block;
- width: 100%;
- margin-top: 10px;
- margin-right: 0;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
 }
 .main-footer {
     background-color: #212121;
@@ -361,7 +361,6 @@ text-decoration: underline;
 .footer-social {
     width: 145px;
     text-align: center;
- 
     /* Временно для сетки */
     /* min-height: 100px; */
 }
@@ -431,20 +430,29 @@ fill: black;
     border: 2px solid #000000;
 }
 /* <!-- Стили каталога (catalog) --!>  */
-.catalog-page {
+.inner-page {
     color: #000000;
-        background-color: #f7f4f1;
+    background-color: #f7f4f1;
     background-image: url('../img/catalog-bg.jpg');
     background-position: 0 0;
     background-repeat: repeat;
+}  
+.inner-page .main-header {
+    margin-bottom: 50px;
+    background-color: #000000;
 }
-.mini-logo {
-    background-color: black;
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
 }
-.catalog-navigation-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.inner-page .main-header-logo {
+    order: 0;
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+.inner-page .user-navigation {
+    margin-left: auto;
 }
 .catalog-main h1{
     margin: 0;
