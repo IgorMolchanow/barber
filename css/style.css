@@ -19,6 +19,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+li {
+    list-style: none;
+}
 .button {
     display: inline-block;
     margin-right: 16px;
@@ -509,6 +512,7 @@ display: none;
 }
 filter {
     width: 220px;
+    display: block;
 }
 .group-chekbox {
     list-style: none;
@@ -552,7 +556,11 @@ filter {
 }
 .catalog-list {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+    list-style: none; 
 }
 .catalog-item {
     margin-right: 20px;
@@ -562,7 +570,20 @@ filter {
     box-shadow: 0 0 15px 0
     rgba(0, 1, 1, 0.2)    
 }
+.catalog-item a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.catalog-item h3{
+    order: 1;
+    margin: 15px 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
 .product-category {
+    display: block;
     font-family: inherit;
     text-transform: none;
     background-color: transparent;
@@ -570,10 +591,62 @@ filter {
     background-color: #ffffff;
 }
 .product-firm {
+    display: block;
+    justify-content: space-between;
     font-family: inherit;
     background-color: #ffffff
 }
+.catalog-item img{
+    margin: 0%;
+    width: 200px;
+    height: 165px;
+}
 .catalog-price {
+    display: flex;
+    margin: 16px;
     font-family: inherit;
     background-color:#e5e5e5;
+}
+.catalog-price b{
+    padding: 13px 35px;
+    width: 109px;
+    background-color: #e5e5e5;
+    line-height: 18px;
+    text-align: center;
+}
+.catalog-price .button{
+    margin-right: 0;
+    padding: 10px, 18px;
+    width: 75px;
+}
+.pagination-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+}
+.pagination-item{
+    margin-right: 7px;
+    background-color: black;
+}
+.pagination-list a{
+    display: block;
+    color: white;
+    padding: 13px 19px;
+}
+.pagination-list a:hover,
+.pagination-list a:focus {
+    background-color:#663d15 ;
+}
+.pagination-current a {
+    color: #000;
+    background-color: #fff;
+    margin-right: 7px;
+}
+.pagination-current a:hover,
+.pagination-current a:focus {
+    background-color: black;
+    color: white;
 }
