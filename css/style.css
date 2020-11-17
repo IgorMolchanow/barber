@@ -66,6 +66,8 @@ background-color: #000000;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    /* background: rgba(45, 59, 255, 0.2);
+    box-shadow: 0 0 0 3px rgb(45, 255, 220) */
 }
 .main-header{
     margin-bottom: 44px;
@@ -471,10 +473,16 @@ fill: black;
     width: 430px;
     font-size: 14px;
     font-weight: bold;
-    text-align: left;
+    margin: 0;
+    padding: 0;
     color: #000000;
     list-style: none;
-    margin-bottom: 53px; 
+    margin-bottom: 53px;
+    /* background: rgba(255,45,82, 0.2);
+    box-shadow: 0 0 0 3px rgb(255, 45, 82)  */
+}
+.breadcrumbs a{
+    color: black;
 }
 .breadcrumbs:hover
 .breadcrumbs:focus{
@@ -508,11 +516,12 @@ display: none;
 }
 .catalog-columns{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
-filter {
+.filter {
     width: 220px;
-    display: block;
+    /* background: rgba(255, 87, 45, 0.2);
+    box-shadow: 0 0 0 3px rgb(255, 181, 45) */
 }
 .group-chekbox {
     list-style: none;
@@ -567,8 +576,11 @@ filter {
     margin-bottom: 20px;
     width: 220px;
     background-color: #ffffff;
-    box-shadow: 0 0 15px 0
-    rgba(0, 1, 1, 0.2)    
+    /* box-shadow: 0 0 15px 0 */
+    /* rgba(0, 1, 1, 0.2)     */
+}
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 .catalog-item a{
     display: flex;
@@ -598,13 +610,14 @@ filter {
 }
 .catalog-item img{
     margin: 0%;
-    width: 200px;
+    width: 220px;
     height: 165px;
 }
 .catalog-price {
     display: flex;
     margin: 16px;
     font-family: inherit;
+    margin-top: 0;
     background-color:#e5e5e5;
 }
 .catalog-price b{
@@ -615,7 +628,7 @@ filter {
     text-align: center;
 }
 .catalog-price .button{
-    margin-right: 0;
+    margin-right: 0px;
     padding: 10px, 18px;
     width: 75px;
 }
