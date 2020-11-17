@@ -27,7 +27,7 @@
                     </ul>
                     <ul class="user-navigation">
                         <li><a class="login-link" href="login.html">Вход</a></li>
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -159,35 +159,37 @@
             </p>
         </div>
     </footer>
-    <section class="modal">
+    <section class="modal modal-login">
         <h2> Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
+        <p class="login-description">Введите пожалуйста свой логин и пароль</p>
         <form class="login-form" method="POST" action="http://echo.htmlacademy.ru">
             <p>
-                <label class="visually-hiden" for="user-login">Логин</label>
+                <label class="visually-hidden" for="user-login">Логин</label>
                 <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="example@email.om">
             </p>
             <p>
-                <label class="visually-hiden" for="user-password">Пароль</label>
+                <label class="visually-hidden" for="user-password">Пароль</label>
                 <input class="login-icon-password" id="user-password" type="password" name="password"
                     placeholder="*******">
             </p>
             <p class="login-password-info">
                 <label class="login-chekbox" for="login-password-info">
                     <input type="checkbox" name="remember" id="login-password-info">
-                    <span class="chebox-indicator"></span> Запомните меня
-                    <a class="restore" href="#">Я забыл пароль</a>
+                    <div class="login-help">
+                        <span class="chebox-indicator"></span> Запомните меня
+                        <a class="restore" href="#">Я забыл пароль</a>
+                    </div>
             </p>
             <button class="button" type="submit">Войти</button>
         </form>
-        <button class="button" type="button"> Закрыть</button>
+        <button class="modal-close" type="button"></button>
     </section>
-    <section class="modal">
+    <section class="modal modal-map">
         <h2> Как до нас добраться</h2>
         <p>
             <img src="img/map.jpg" width="780" height="560" alt="Адрес барбершопа">
         </p>
-        <button class="button" type="button"> Закрыть</button>
+        <button class="modal-close" type="button">X</button>
     </section>
 </body>
 
