@@ -31,33 +31,6 @@
                 </div>
             </div>
         </nav>
-        <!-- javascript -->
-        <script>
-            var link = document.querySelector(".login-link");
-            var popup = document.querySelector(".modal-login");
-            var close = document.querySelector(".modal-close");
-            var form = popup.querySelector("form");
-            var login = popup.querySelector("[name=login]");
-            var password = popup.querySelector("[name=password]")
-
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-                login.focus();
-            });
-
-            close.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.remove("modal-show");
-            });
-
-            form.addEventListener("submit", function (evt) {
-                if (!login.value || !password.value) {
-                    evt.preventDefault();
-                    console.log("Нужно ввести логин и пароль")
-                }
-            });
-        </script>
     </header>
     <main class="container">
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
@@ -124,8 +97,8 @@
                     Пн-Пт: с 10:00 до 22:00 <br>
                     Сб-Вс: с 10:00 до 19:00
                 </p>
-                <a class="button" class="contacts-map" href="map.html">Как проехать</a>
-                <a class="button" class="contacts-callback" href="cotacts.html">Обратная связь</a>
+                <a class="button contacts-button-map" href="map.html">Как проехать</a>
+                <a class="button contacts-callback" href="cotacts.html">Обратная связь</a>
             </section>
             <section class="appointment">
                 <h2>Записаться</h2>
@@ -214,6 +187,10 @@
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden"> Как до нас добраться</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7591401351895!2d30.32058091609685!3d59.93613878187526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb5664b4b%3A0xf0c49b8a94e26c99!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE2LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606213350099!5m2!1sru!2sru"
+            width="780" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
         <p>
             <img src="img/map.jpg" width="780" height="560" alt="Адрес барбершопа">
         </p>
@@ -221,13 +198,7 @@
             <span class="visually-hidden">Закрыть</span>
         </button>
     </section>
-    <script>
-        var close = document.querySelector(".modal-close")
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-    </script>
+<script src="js/popup.js"></script>
+<script src="js/map.js"></script>
 </body>
-
 </html>
